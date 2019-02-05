@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Nathan</title>
+        <meta charset="UTF-8">
+        <script src="main.js"></script>
+        <link href="main.css" type="text/css" rel="stylesheet"/>
+        <link href="images/favicon.png" type="image/png" rel="icon"/>
+    </head>
+    <body onload="start()">
+        <div id="StuffThatAppears">
+            <button onclick="createParticle()">Create New Particle with Below Parameters</button>
+            <table>
+                <tr>
+                    <th>Derivative</th>
+                    <th>0th</th>
+                    <th>1st</th>
+                    <th>2nd</th>
+                    <th>3rd</th>
+                    <th>4th</th>
+                    <th>5th</th>
+                </tr>
+                <tr>
+                    <th>X</th>
+                    <th><input type="number" id=x0></th>
+                    <th><input type="number" id=x1></th>
+                    <th><input type="number" id=x2></th>
+                    <th><input type="number" id=x3></th>
+                    <th><input type="number" id=x4></th>
+                    <th><input type="number" id=x5></th>
+                </tr>
+                <tr>
+                    <th>Y</th>
+                    <th><input type="number" id=y0></th>
+                    <th><input type="number" id=y1></th>
+                    <th><input type="number" id=y2></th>
+                    <th><input type="number" id=y3></th>
+                    <th><input type="number" id=y4></th>
+                    <th><input type="number" id=y5></th>
+                </tr>
+                <tr>
+                    <th>Angle</th>
+                    <th><input type="number" id=a0></th>
+                    <th><input type="number" id=a1></th>
+                    <th><input type="number" id=a2></th>
+                    <th><input type="number" id=a3></th>
+                    <th><input type="number" id=a4></th>
+                    <th><input type="number" id=a5></th>
+                </tr>
+                <tr>
+                    <th>Angle Mag X</th>
+                    <th><input type="number" id=amx0></th>
+                    <th><input type="number" id=amx1></th>
+                    <th><input type="number" id=amx2></th>
+                    <th><input type="number" id=amx3></th>
+                    <th><input type="number" id=amx4></th>
+                    <th><input type="number" id=amx5></th>
+                </tr>
+                <tr>
+                    <th>Angle Mag Y</th>
+                    <th><input type="number" id=amy0></th>
+                    <th><input type="number" id=amy1></th>
+                    <th><input type="number" id=amy2></th>
+                    <th><input type="number" id=amy3></th>
+                    <th><input type="number" id=amy4></th>
+                    <th><input type="number" id=amy5></th>
+                </tr>
+                <tr>
+                    <th>R</th>
+                    <th><input type="number" id=r0></th>
+                    <th><input type="number" id=r1></th>
+                    <th><input type="number" id=r2></th>
+                    <th><input type="number" id=r3></th>
+                    <th><input type="number" id=r4></th>
+                    <th><input type="number" id=r5></th>
+                </tr>
+                <tr>
+                    <th>G</th>
+                    <th><input type="number" id=g0></th>
+                    <th><input type="number" id=g1></th>
+                    <th><input type="number" id=g2></th>
+                    <th><input type="number" id=g3></th>
+                    <th><input type="number" id=g4></th>
+                    <th><input type="number" id=g5></th>
+                </tr>
+                <tr>
+                    <th>B</th>
+                    <th><input type="number" id=b0></th>
+                    <th><input type="number" id=b1></th>
+                    <th><input type="number" id=b2></th>
+                    <th><input type="number" id=b3></th>
+                    <th><input type="number" id=b4></th>
+                    <th><input type="number" id=b5></th>
+                </tr>
+                <tr>
+                    <th>Alpha</th>
+                    <th><input type="number" id=al0></th>
+                    <th><input type="number" id=al1></th>
+                    <th><input type="number" id=al2></th>
+                    <th><input type="number" id=al3></th>
+                    <th><input type="number" id=al4></th>
+                    <th><input type="number" id=al5></th>
+                </tr>
+            </table>
+            <button onclick="wipeParticles()">Clear Particles</button>
+            <button onclick="wipeParameters()">Clear Parameters</button>
+            <br>
+            Autosummon Particles:<br><input type="checkbox" id="autoSummon">
+            <br>
+            Clear Canvas:<br><input type="checkbox" id="clearCanvas" checked>
+            <br>
+            Tick Rate: <input type="number" value="20" id=tickRate>
+            <button onclick="updateTickRate()">Update Tick Rate</button>
+            <br>
+            <button onclick="squiggleLine()">Summon Squiggle Line</button>
+            <button onclick="image1Preset()">First Image's Preset</button>
+            <button onclick="image2Preset()">Second Image's Preset</button>
+            <button onclick="image3Preset()">Third Image's Preset</button>
+            <br>
+            Autosummon Squiggle Lines:<br><input type="checkbox" id="autoSummonLine">
+            Toggle Color Cycle (RGB goes to 0 after 255):<br><input type="checkbox" id="colorCycle" checked>
+            Toggle Alpha Cycle (Alpha goes to 0 after 1):<br><input type="checkbox" id="alphaCycle" checked>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,25 @@
+#rightAlignedThing{
+    text-align: right;
+    color: blue;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.wowFancyColor{
+    color: pink;
+    background-color: black;
+}
+body{
+    font-family: 'Courier New', Courier, monospace
+}
+#StuffThatAppears{
+    display: none;
+}
+table, th, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+input{
+    width: 90%;
+}
+#tickRate{
+    width: 30px;
+}
